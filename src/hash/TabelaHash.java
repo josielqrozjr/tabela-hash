@@ -1,5 +1,6 @@
 package hash;
 
+import java.util.Scanner;
 import lista.ListaEncadeada;
 
 public class TabelaHash {
@@ -9,6 +10,11 @@ public class TabelaHash {
     public TabelaHash(int tamanho) {
         this.tabela = new ListaEncadeada[tamanho];
         this.colisao = 0;
+    }
+
+    public int tamanhoTabela() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
     }
 
     public int funcaoHash(int chave) {
