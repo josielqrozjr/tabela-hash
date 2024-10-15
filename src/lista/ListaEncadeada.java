@@ -135,5 +135,15 @@ public class ListaEncadeada {
         return null;
     }
 
-
+    // Método para buscar um elemento na lista
+    public boolean busca(int valor) {
+        Celula atual = lista;
+        while (atual != null) {
+            if (atual.getElemento() == valor) {
+                return true;
+            }
+            atual = atual.getProximo();
+        }
+        return false;
+    }
 }
