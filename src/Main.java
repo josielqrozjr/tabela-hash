@@ -11,10 +11,8 @@ public class Main {
 
         while (!sair) {
             System.out.println("\nEscolha a estrutura para testar:");
-            System.out.println("1 - Lista Encadeada");
-            System.out.println("2 - Pilha Encadeada");
-            System.out.println("3 - Fila Encadeada");
-            System.out.println("0 - Sair");
+            System.out.println("1 - Tabela Hash");
+            System.out.println("0 - Encerrar");
 
             System.out.print("\nDigite o número da opção: ");
 
@@ -22,7 +20,7 @@ public class Main {
 
             switch (opcao) {
                 case 1:
-                    controller.testarListaEncadeada(scanner);
+                    controller.testarTabelaHash(scanner);
                     break;
                 case 0:
                     sair = true;
