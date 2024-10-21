@@ -9,6 +9,7 @@ public class Main {
         Controller controller = new Controller();
         boolean sair = false;
 
+
         while (!sair) {
             System.out.println("\nEscolha a estrutura para testar:");
             System.out.println("1 - Tabela Hash");

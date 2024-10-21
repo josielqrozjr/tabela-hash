@@ -20,6 +20,7 @@ public class Controller {
             System.out.println("1 - Buscar chave");
             System.out.println("2 - Imprimir tabela");
             System.out.println("3 - Número de colisões");
+            System.out.println("4 - Inserir chave");
             System.out.println("0 - Voltar");
 
             System.out.print("\nDigite o número da opção: ");
@@ -44,6 +45,11 @@ public class Controller {
                     break;
                 case 3:
                     System.out.println("Número de colisões: " + tabela.getColisoes());
+                    break;
+                case 4:
+                    System.out.print("\nDigite uma chave para inserir: ");
+                    int chave = scanner.nextInt();
+                    tabela.insere(chave);
                     break;
                 case 0:
                     voltar = true;
